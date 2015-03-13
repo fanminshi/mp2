@@ -1,0 +1,23 @@
+<div>
+Sort by :
+<select ng-model="genre">
+  <option value= 'all'>All</option>
+	<option value= 'Crime'>Crime</option>
+	<option value= 'Drama'>Drama</option>
+</select>
+
+<ul>
+  <li ng-repeat = "movie in movies | filter : filterByGenres" class="thumbnail">
+  	<a href="#/lists/{{movie.rank}}" class="thumb"><img ng-src="/data/images/{{movie.imdbID + '.jpg'}}"></a>
+    <p>{{movie.title}}</p>
+    <p>
+     {{movie.rank}}
+    </p>
+    <p>
+      {{movie.genre}}
+    </p>
+    
+  </li>
+</ul>
+{{genre}}
+</div>

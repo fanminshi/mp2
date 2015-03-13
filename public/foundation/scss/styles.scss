@@ -1,0 +1,14 @@
+@import "compass";
+@import "compass/reset";
+
+
+body {
+      background: url("banner_image.jpg");
+      background-attachment: fixed;
+      background-size: 100%;
+  }
+
+.page {
+  height:auto;
+  background:#ffffff;
+}

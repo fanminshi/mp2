@@ -1,0 +1,24 @@
+<div>
+
+Search : <input ng-model = "query">
+Sort by :
+<select ng-model="orderProp">
+	<option value="title">Alphabettical</option>
+	<option value="rank">highest</option>
+</select>
+
+<select ng-model="dir">
+	<option value="+">Accending</option>
+	<option value="-">descending</option>
+</select>
+<ul>
+  <li ng-repeat = "movie in movies | filter:query | orderBy: dir + orderProp" class="thumbnail">
+  	<a href="#/lists/{{movie.rank}}" class="thumb"><img ng-src="/data/images/{{movie.imdbID + '.jpg'}}"></a>
+    <p>{{movie.title}}</p>
+    <p>
+     {{movie.rank}}
+    </p>
+  </li>
+</ul>
+
+</div>

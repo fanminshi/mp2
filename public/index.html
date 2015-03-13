@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>MP2 Starter</title>
+  <title>MP2</title>
   <script src="./lib/angular/angular.min.js"></script>
   <script src="./js/controllers.js"></script>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./foundation/css/foundation.css">
   
@@ -13,48 +14,257 @@
 
 
 <body>
+	<header class = "contain-to-grid sticky"> 
+		<nav class="top-bar" data-topbar role="navigation" >
+		  <ul class="title-area">
+		    <li class="name">
+		      <h1><a href="#">Fanmin Shi's Profolio</a></h1>
+		    </li>
+		     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    		<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+		  </ul>
 
-	<nav class="top-bar" data-topbar role="navigation">
-	  <ul class="title-area">
-	    <li class="name">
-	      <h1><a href="#">MP2</a></h1>
-	    </li>
-	     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-	    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-	  </ul>
+		  <section class="top-bar-section">
+		    <!-- Right Nav Section -->
+		    <ul class="right">
+		      <li class="active"> <a href="#about" id="link-about" >About</a></li>
 
-	  <section class="top-bar-section">
-	    <!-- Left Nav Section -->
-	    <ul class="left">
-	      <li><a href="https://courses.engr.illinois.edu/cs498rk1/index.html">CS498RK</a></li>
-	    </ul>
-	  </section>
-	</nav>
+		      <li class="active"> <a href="#experiences" id="link-exp">Experiences</a></li>
 
-	<div class="row" ng-app = "demoApp">
-		<div class="panel small-centered columns small-12 medium-4">
-    	<input id="nameInput" ng-model="name" placeholder="Your Name" autofocus>
+		      <li class="active"> <a href="#projects" id="link-proj">Projects</a></li>
+
+		      <li class="active"> <a href="#activities" id="link-act">Activities</a></li>
+		      <li ><a href="https://github.com/fanminshi" target="_blank">
+					<i class="fa fa-github-square"></i>
+				</a>
+			  </li>
+			  <li >
+				<a href="https://www.facebook.com/people/Fanmin-Shi/100004817589516" target="_blank">
+					<i class="fa fa-facebook-square"></i>
+				</a>
+			  </li>
+
+		    </ul>
+		  </section>
+		</nav>
+	</header>
+
 	
-		<h3>Hello, {{name}}</h3>
 
+
+
+	
+	<section class= "trans_page">
+		<div class="row ">	
+			<div class = "large-12 columns text-center">
+				
+					<h1>Q: What's Computer Science?
+					<br>
+	 	   			A: It is the Science of Problem Solving.
+					</h1>
+				
+			</div>
 		</div>
-	</div>
-	<div class="row">
-		<div class="alert columns small-12 large-6">
-			<div><img src="http://lorempixel.com/400/200/cats" /></div>
+	</section>
+	
+	<section class = "page" id="about">
+		<div class="row" >
+			<div class = "large-12 column text-center">
+			
+					<h2> Specialising in Java backend software development, X86-64 assembly code optimization, and CUDA Parallelization</h2>
+					<br>
+					<h5>
+					I am a Software Engineer who is interested in Cloud Computing, CUDA Parallization, and Machine Learning. I will graduate from University of Illinois in Urbana-Champaign with a BS Computer Science Degree in May 2015.
+					<h5>
+		
+			</div>
+	    </div>
+	</section>	
 
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit velit temporibus, fugit recusandae aliquid officiis molestias possimus reprehenderit quos. Facere dolores, nulla optio recusandae. Voluptatibus aut esse nulla saepe sit ut amet, neque officia officiis quam ea ex adipisci, quaerat, eligendi veniam iste temporibus. Aperiam ea quos fugiat provident, voluptatum reiciendis mollitia voluptates, odio quam at, deserunt animi voluptas odit aliquid saepe voluptate distinctio excepturi. Deserunt, id esse fuga cum accusantium eos obcaecati odit veritatis molestias illum sequi repellat, quisquam quasi architecto velit blanditiis perferendis, nulla eligendi non laboriosam. Eligendi sint, voluptatem ipsam dolore eum temporibus dicta, quaerat ea molestias placeat, asperiores minima sit explicabo! Repellat qui ducimus ipsum. Dignissimos at, aliquid vitae asperiores omnis provident voluptatibus, itaque delectus. Porro corrupti vel culpa, delectus in doloremque nam ratione aliquid ullam non iusto magnam, repudiandae, magni a quasi voluptatum inventore exercitationem quibusdam sint autem totam ex quia possimus. Similique ad fugiat eligendi magnam ab, ex nulla unde eos, tempora quis consequatur maxime inventore perferendis voluptatem non nam dignissimos voluptatum dolor quasi quidem molestias maiores doloribus. Omnis ipsa fugit amet! Eum repellat deleniti fuga omnis in maiores rem iusto, qui quasi ipsum illum odit laudantium molestiae, nostrum ipsam fugit animi atque! Non.
+	<section class= "trans_page" id="experiences">
+		<div class="row ">
+			<div class = "large-12 columns text-center">
+				<h2> Experiences</h2>
+			</div>
 		</div>
-		<div class="columns small-12 large-6">
-	  	<div><img src="http://lorempixel.com/400/200/nature" />	</div>
-	  	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nobis facere sint placeat necessitatibus reprehenderit amet quas minima beatae illo nemo labore, maxime adipisci, accusamus voluptates repudiandae quia, ut excepturi ea quis obcaecati molestias error architecto unde? Hic vel facere porro magnam ipsam omnis eos ducimus, architecto velit beatae modi natus sunt suscipit quo optio qui repellat, blanditiis consequuntur. Fuga omnis porro quis inventore in voluptatum veritatis illum beatae rem. Labore nam saepe cupiditate quod, itaque quidem libero, quas tempore incidunt, quos earum repudiandae recusandae quia voluptas ducimus inventore, expedita. Alias minima, commodi aut, aspernatur laborum quae mollitia pariatur suscipit ad accusamus a ipsam fuga necessitatibus voluptas esse error reprehenderit provident. Sequi architecto ipsum qui enim labore sunt incidunt ullam pariatur. Minus porro error ipsa perferendis exercitationem debitis dicta asperiores nostrum cum voluptas qui dolores odit numquam incidunt cumque eos nemo architecto repudiandae adipisci, eius ut, aut suscipit minima perspiciatis consectetur. Ratione quisquam neque voluptatem? Qui, aspernatur iste quaerat iure. Debitis nobis minus animi mollitia libero temporibus perferendis ratione, inventore ullam, eos ut porro, velit quibusdam rerum possimus, ex! Quidem consectetur obcaecati ad veritatis. Velit illum aliquid tenetur, nisi illo quaerat labore nemo id sequi eveniet consequuntur. Voluptate, similique, rem!</div>
-	</div>
- 
 
+		<div class="row" >
+			<div class = "large-4  medium-4 columns text-center" >
 
-  <script src="./js/script.js"></script>
+				<a class="th" href="#" data-reveal-id = "AmazonModal">
+					<img src="amazon-logo.jpg" alt="Amazon" style="height:200px">
+				</a>
+
+				<div id="AmazonModal" class="reveal-modal" data-reveal>
+					<h3>Amazon.com Inc.</h3>
+					<h5>
+						Software Development Engineer Intern at ECPS
+					<h5>
+					<h5>
+						Summer 2014
+					</h5>
+					<ul>
+						<li>
+							● Designed and implemented a graph library using Java that find the strongly connected components of a graph in O(N + E) time.
+						</li>
+						<li>
+							● Wrote a comprehensive test suite, both unit tests and integration tests, for the graph library.
+						</li>
+						<li>
+							● Incorporated the behavior of graph library API to the existing website using Ruby on Rails and JavaScript.	
+						</li>
+						<li>
+							● Successfully accomplished the assigned project and shipped the code to production.
+						</li>
+					</ul>
+				  <a class="close-reveal-modal">&#215;</a>
+				</div>
+			</div>
+
+			<div class = "large-4  medium-4 columns text-center" >
+				<a class="th" href="#" data-reveal-id = "EnoshModal">
+					<img src="enosh_logo.jpg" alt="Enosh" style="height:200px">
+				</a>
+
+				<div id="EnoshModal" class="reveal-modal" data-reveal>
+					<h3>ENOSH</h3>
+					<h5>
+						Software Development and Optimization Engineer Intern
+					</h5>
+					<h5>
+						Summer 2013
+					</h5>
+					<ul>
+							<li>
+								● Wrote regression test driver in C and Fortran 95 for the software packages developed by ENOSH.
+							</li>
+							<li>
+								● Gathered test results and made the performance comparison graphs which displayed in the official website.
+							</li>
+							<li>
+								● Learned x86-64 assembly language, specifically SIMD instructions. Wrote the building blocks of the proprietary matrix multiplication package using SIMD instructions which outperformed the code written by ENOSH.	
+							</li>
+							<li>
+								● Worked directly under Dr. Jesse Wang and gained an indepth understanding on computer architectures and waterfall coding technology behind code optimization.
+							</li>
+					</ul>
+				  <a class="close-reveal-modal">&#215;</a>
+				</div>
+			</div>
+			<div class = "large-4 medium-4 columns text-center" >
+				<a class="th" href="#" data-reveal-id = "UofIModal">
+					<img src="u_of_i.jpg" alt="U of I" style="height:200px" >
+				</a>
+
+				<div id="UofIModal" class="reveal-modal" data-reveal>
+					<h3>Beckman Institute</h3>
+					<h5>
+						Undergraduate Research: NEUROTECH group, Beckman Institute.
+					</h5>					
+					<h5>
+						Research Under Professor Mark E.Nelson, Leader of NEUROTECH group
+					</h5>
+					<h5>
+						Summer 2013 Spring - Spring 2014
+					</h5>
+					<ul>
+							<li>
+								● Co-Developed a simulation program which can simulate a robot with eight infrared sensors and two motors movements through a defined 2D environment.
+							</li>
+							<li>
+								● Implemented a learning model in Python and studied it on the simulator.
+							</li>
+							<li>
+								● Debugged and fixed the code to improve the model based on newly collected data.	
+							</li>
+							<li>
+								● Presented a novel situation that current learning model could not handle. Explored different solution to the problem.
+							</li>
+					</ul>
+				  <a class="close-reveal-modal">&#215;</a>
+				</div>
+			</div>
+		</div>
+
+	
+	</section>	
+
+	<section class = "page" id="projects">
+		<div class="row">
+			<div class = "large-12 columns text-center">
+				<h2> Projects</h2>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class = "large-4  medium-4 columns text-center">
+				<div class="flex-video">
+        			<video controls loop>
+						<source src="demo1.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+			<div class = "large-4  medium-4 columns text-center">
+				<div class="flex-video">
+        			<video controls loop>
+						<source src="demo2.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+			<div class = "large-4 medium-4 columns text-center">
+				<div class="flex-video">
+        			<video controls loop>
+						<source src="demo3.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+		</div>
+	</section>	
+
+		<section class= "trans_page" id="activities">
+		<div class="row">
+
+			<div class="row">
+				<div class = "large-12 columns text-center">
+					<h2> Activities</h2>
+				</div>
+			</div>
+			<div class = "large-12 columns text-center">		
+				<div class = "mycarr">
+					<div class="image">
+						<img src="hack1.JPG" >
+					</div>
+					<div class="image">
+						<img src="hack6.JPG" >
+					</div>
+					<div class="image">
+						<img src="hack3.JPG">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+
+	</section>	
+
+	<footer>
+		<div class="row">
+			<div class = "large-12 column">
+				<small> Copyright &copy; 2015</small>
+			</div>
+		</div>
+	</footer>
+
+  
   <script src="./lib/jquery-2.1.3.min/index.js"></script>
   <script src="./foundation/js/foundation.min.js"></script>
   <script src="http://localhost:35729/livereload.js"></script>
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css"/>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick-theme.css"/>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+  <!-- I used the script from http://stackoverflow.com/questions/21059419/zurb-foundation-5-reveal-modal-not-working  to get modal working-->
+
+  <script src="./js/script.js"></script>
 </body>
 </html>
