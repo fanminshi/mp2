@@ -14,3 +14,21 @@ function highlightThis(event) {
     alert(this.className);
     this.style.backgroundColor=backgroundColor;
 }
+
+
+
+$(function(){
+
+ $(document).foundation();
+
+  $('.mycarr').slick({
+    infinite: true,
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    arrows: false
+  });
+
+
+});

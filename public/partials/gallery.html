@@ -1,23 +1,21 @@
-<div>
-Sort by :
-<select ng-model="genre">
-  <option value= 'all'>All</option>
-	<option value= 'Crime'>Crime</option>
-	<option value= 'Drama'>Drama</option>
-</select>
+<div class ="row">
 
-<ul>
+</div>
+
+<div>
+<label> Sort by :
+  <select ng-model = "genre">
+    <option  ng-repeat = "gen in genres" value= '{{gen}}'>{{gen}}</option>
+  </select>
+</label>
+<ul class = "large-block-grid-6">
   <li ng-repeat = "movie in movies | filter : filterByGenres" class="thumbnail">
   	<a href="#/lists/{{movie.rank}}" class="thumb"><img ng-src="/data/images/{{movie.imdbID + '.jpg'}}"></a>
-    <p>{{movie.title}}</p>
-    <p>
-     {{movie.rank}}
-    </p>
-    <p>
-      {{movie.genre}}
-    </p>
-    
+    <h5>{{movie.title}}</h5>
+    <h5>
+     Rank: {{movie.rank}}
+    </h5>
   </li>
 </ul>
-{{genre}}
+
 </div>

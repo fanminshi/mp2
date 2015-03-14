@@ -1,23 +1,40 @@
+
 <div>
+<li class="has-form">
+  <div class="row collapse">
+    <div class="large-4 columns">
+      <label>Search : <br>
+        <input ng-model = "query">
+      </label>
+    </div>
+    <div class="large-4 columns">
+      
+       <label>Sort by 
+         <select ng-model="orderProp">
+            <option value="title">Alphabettical</option>
+            <option value="rank">highest</option>
+          </select>
+        </label> 
+    </div>
+    <div class="large-4 columns">
+      <label>Order by
+      <select ng-model="dir">    
+        <option value="+">Accending</option>
+        <option value="-">descending</option>
+      </select>
+      </label>
+    </div>
 
-Search : <input ng-model = "query">
-Sort by :
-<select ng-model="orderProp">
-	<option value="title">Alphabettical</option>
-	<option value="rank">highest</option>
-</select>
+  </div>
+</li>
 
-<select ng-model="dir">
-	<option value="+">Accending</option>
-	<option value="-">descending</option>
-</select>
-<ul>
+<ul class = "large-block-grid-6">
   <li ng-repeat = "movie in movies | filter:query | orderBy: dir + orderProp" class="thumbnail">
   	<a href="#/lists/{{movie.rank}}" class="thumb"><img ng-src="/data/images/{{movie.imdbID + '.jpg'}}"></a>
-    <p>{{movie.title}}</p>
-    <p>
-     {{movie.rank}}
-    </p>
+    <h5>{{movie.title}}</h5>
+    <h5>
+     Rank: {{movie.rank}}
+    </h5>
   </li>
 </ul>
 
