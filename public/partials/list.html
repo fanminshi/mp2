@@ -30,7 +30,7 @@
 
 <ul class = "large-block-grid-6">
   <li ng-repeat = "movie in movies | filter:query | orderBy: dir + orderProp" class="thumbnail">
-  	<a class = "th" href="#/lists/{{movie.rank}}" class="thumb"><img ng-src="/data/images/{{movie.imdbID}}.jpg"></a>
+  	<a class = "th" href="#/lists/{{movie.rank}}" class="thumb"><img ng-src="./data/images/{{movie.imdbID}}.jpg"></a>
     <h5>{{movie.title}}</h5>
     <h5>
      Rank: {{movie.rank}}
